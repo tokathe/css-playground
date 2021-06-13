@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThreeDimensionalCssModule } from './three-dimensional-css/three-dimensional-css.module';
+import { TypewriterModule } from './typewriter/typewriter.module';
 
 
 
@@ -9,9 +10,11 @@ import { ThreeDimensionalCssModule } from './three-dimensional-css/three-dimensi
   imports: [
     CommonModule,
     ThreeDimensionalCssModule,
+    TypewriterModule
   ],
   exports: [
-    ThreeDimensionalCssModule
+    ThreeDimensionalCssModule,
+    TypewriterModule
   ]
 })
 export class PagesModule { }
